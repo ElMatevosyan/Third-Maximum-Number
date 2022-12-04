@@ -7,7 +7,7 @@ class Solution {
 public:
     int thirdMax(vector<int>& nums) 
     {
-        set<int> new_set; 
+        multiset<int> new_set; 
         for(int it : nums) 
             {
             new_set.insert(it); 
@@ -30,7 +30,7 @@ public:
 
 int main()
 {
-    std::vector <int> nums {41,19,37,-9,18};
+    std::vector <int> nums {41,19,37,-9,37};
 	for(int i=0; i < nums.size(); i++)
 	{
 		std::cout << nums[i] << " ";
